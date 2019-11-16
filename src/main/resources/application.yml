@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    username:
+    password:
+    url:
+
+  main:
+    allow-bean-definition-overriding: true
+
+search:
+  contextualWeb:
+    host:
+    apiKey:
+
+aws:
+  credentials:
+    accessKey:
+    secretKey:
+
+sqs:
+  queue:
+    name: search-queue.fifo
+  message:
+    batch:
+      max: 10
+
+feign:
+  client:
+    config:
+      feignName:
+        connectTimeout: 160000000
+        readTimeout: 160000000

@@ -1,0 +1,6 @@
+mockserver:
+  url: http://${mockserver.host}:${mockserver.tcp.1080}
+
+search:
+  contextualWeb:
+    host: mockserver.url
